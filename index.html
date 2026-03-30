@@ -132,6 +132,8 @@ nav{position:fixed;top:0;left:0;right:0;z-index:200;padding:20px 48px;display:fl
 footer{position:relative;z-index:10;padding:32px 48px;border-top:1px solid rgba(0,255,178,0.06);display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:16px}
 .footer-left{font-size:9px;letter-spacing:2px;color:rgba(255,255,255,0.2);text-transform:uppercase}
 .footer-right{font-size:9px;letter-spacing:2px;color:rgba(0,255,178,0.4);text-transform:uppercase}
+.footer-counter{font-size:9px;letter-spacing:2px;color:rgba(0,255,178,0.35);text-transform:uppercase;display:flex;align-items:center;gap:8px}
+.footer-counter::before{content:'◉';font-size:7px;color:#00FFB2;animation:pulse 2s infinite}
 
 /* ARIA LAUNCHER */
 #aria-launcher{position:fixed;bottom:28px;right:28px;z-index:500;display:flex;flex-direction:column;align-items:flex-end;gap:10px}
@@ -364,6 +366,7 @@ footer{position:relative;z-index:10;padding:32px 48px;border-top:1px solid rgba(
 <!-- FOOTER -->
 <footer>
   <div class="footer-left">© 2026 Harsh Vardhan Singh Chauhan // Limitless</div>
+  <div class="footer-counter"><span id="visit-count">—</span> Visitors</div>
   <div class="footer-right">Telecom // Security // Product // AI</div>
 </footer>
 
@@ -573,6 +576,14 @@ document.addEventListener('mousemove',e=>{
   document.getElementById('ael').setAttribute('cx',66+ex);document.getElementById('ael').setAttribute('cy',73+ey);
   document.getElementById('aer').setAttribute('cx',94+ex);document.getElementById('aer').setAttribute('cy',73+ey);
 });
+
+// VISITOR COUNTER
+fetch('https://api.counterapi.dev/v1/ehansih-portfolio/visits/up')
+  .then(r=>r.json())
+  .then(d=>{
+    const el=document.getElementById('visit-count');
+    if(el&&d.count){el.textContent=d.count.toLocaleString()}
+  }).catch(()=>{});
 
 // Blink
 function ablink(){[document.getElementById('ael'),document.getElementById('aer')].forEach(e=>{if(e){e.setAttribute('ry','0.5');setTimeout(()=>e.setAttribute('ry','5.5'),110)}});setTimeout(ablink,2800+Math.random()*4000)}
