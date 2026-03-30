@@ -316,8 +316,8 @@ footer{position:relative;z-index:10;padding:32px 48px;border-top:1px solid rgba(
     <div class="tl-item">
       <div class="tl-year">Present</div>
       <div class="tl-role">Telecom Security & Product Leader</div>
-      <div class="tl-company">Nokia Networks // Global</div>
-      <div class="tl-desc">Leading security strategy, product management and threat intelligence for Nokia's global telecom operator portfolio. Defining what telecom security looks like in the 5G era.</div>
+      <div class="tl-company">Global Telecom Security Leader</div>
+      <div class="tl-desc">Leading security strategy, product management and threat intelligence for global telecom operator portfolios. Defining what telecom security looks like in the 5G era.</div>
     </div>
     <div class="tl-item">
       <div class="tl-year">Mid Career</div>
@@ -481,12 +481,11 @@ const KB={
     "Welcome! ARIA here. Harsh Vardhan Singh Chauhan is one of the most versatile minds in global telecom security. Ask me anything!",
     "Hello! I'm ARIA. Harsh doesn't believe in limits — 16+ years, multiple domains, always evolving. What can I tell you?"
   ],
-  who:"Harsh Vardhan Singh Chauhan has 16+ years in telecom security, product management, and strategy. He's worked across 5G, SS7, IMS, SOC operations, cloud security, AI — and refuses to be boxed into a single specialisation. Currently at Nokia Networks.",
+  who:"Harsh Vardhan Singh Chauhan has 16+ years in telecom security, product management, and strategy. He's worked across 5G, SS7, IMS, SOC operations, cloud security, AI — and refuses to be boxed into a single specialisation.",
   experience:"16+ years spanning telecom network security, product management, 5G architecture, SOC operations, and AI-driven security. He's secured networks for 50+ operators across 25+ countries globally.",
   domains:"Harsh operates across: Telecom Network Defence (SS7, Diameter, GTP, IMS), 5G Core Security, Security Product Strategy, Threat Intelligence, SOC Operations, Cloud/Kubernetes Security, and AI-driven automation. No boundaries.",
-  nokia:"At Nokia Networks, Harsh leads security strategy and product management for global telecom operators. He defines what telecom security looks like in the 5G era — building products, strategies and defences that operators worldwide rely on.",
   ss7:"SS7 is the 40-year-old protocol still running most mobile networks — and still full of critical vulnerabilities. Location tracking, call interception, SMS hijacking — Harsh has spent years understanding and defending against every known attack vector.",
-  five_g:"5G introduces an entirely new attack surface: Service Based Interface (SBI), network slicing, edge computing, cloud-native core functions. Harsh has been architecting 5G security for Nokia's operator customers.",
+  five_g:"5G introduces an entirely new attack surface: Service Based Interface (SBI), network slicing, edge computing, cloud-native core functions. Harsh has been architecting 5G security for major operator customers globally.",
   philosophy:"Harsh's philosophy: The attacker only needs to succeed once. The defender must build systems that make success impossible — not just difficult. He doesn't patch problems; he eliminates them.",
   contact:"Reach Harsh via LinkedIn or the contact form on this page. He's open to advisory roles, consulting engagements, speaking opportunities, and strategic collaborations. Based in India, available globally.",
   limitless:"Limitless means not accepting boundaries that others set for you. Harsh doesn't define himself by a job title or a skill list. He defines himself by what he can achieve — which is everything. 16 years in, still expanding.",
@@ -498,7 +497,7 @@ const KB={
 };
 const QRS={
   greeting:["Who is Harsh Vardhan?","16 years of what exactly?","What domains does he cover?","How to work with him?"],
-  after_who:["Tell me about Nokia work","SS7 Security explained","5G architecture","His philosophy"],
+  after_who:["What domains does he cover?","SS7 Security explained","5G architecture","His philosophy"],
   after_domain:["What is SS7?","5G security risks?","AI in telecom security?","Contact / Hire"],
   general:["What makes him limitless?","Telecom threat landscape","Product strategy work","Let's connect"]
 };
@@ -542,7 +541,6 @@ function handleMsg(text){
   if(t.includes('who')||t.includes('harsh')||t.includes('about')){r=KB.who;q='after_who'}
   else if(t.includes('year')||t.includes('experience')||t.includes('career')){r=KB.experience;q='after_who'}
   else if(t.includes('domain')||t.includes('cover')||t.includes('what does')){r=KB.domains;q='after_domain'}
-  else if(t.includes('nokia')||t.includes('work')){r=KB.nokia;q='general'}
   else if(t.includes('ss7')||t.includes('signal')||t.includes('diameter')){r=KB.ss7;q='after_domain'}
   else if(t.includes('5g')||t.includes('five')){r=KB.five_g;q='after_domain'}
   else if(t.includes('philosoph')||t.includes('mindset')||t.includes('believe')){r=KB.philosophy;q='general'}
