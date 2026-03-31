@@ -4,6 +4,15 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Harsh Vardhan Singh Chauhan // Limitless</title>
+<meta property="og:title" content="Harsh Vardhan Singh Chauhan // Limitless">
+<meta property="og:description" content="16+ years in Telecom Security, 5G Architecture, Product Strategy & AI. Open to advisory, consulting and speaking opportunities.">
+<meta property="og:url" content="https://saharsh-projects.vercel.app">
+<meta property="og:type" content="website">
+<meta name="description" content="Harsh Vardhan Singh Chauhan — 16+ years in Telecom Security, 5G, Product Strategy & AI. Open to advisory, consulting and speaking.">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Harsh Vardhan Singh Chauhan // Limitless">
+<meta name="twitter:description" content="16+ years in Telecom Security, 5G Architecture, Product Strategy & AI.">
+
 <style>
 *{margin:0;padding:0;box-sizing:border-box;cursor:none}
 body{background:#020408;color:#fff;font-family:'Courier New',monospace;overflow-x:hidden}
@@ -135,6 +144,26 @@ footer{position:relative;z-index:10;padding:32px 48px;border-top:1px solid rgba(
 .footer-counter{font-size:9px;letter-spacing:2px;color:rgba(0,255,178,0.35);text-transform:uppercase;display:flex;align-items:center;gap:8px}
 .footer-counter::before{content:'◉';font-size:7px;color:#00FFB2;animation:pulse 2s infinite}
 
+
+/* MOBILE NAV */
+.nav-hamburger{display:none;flex-direction:column;gap:5px;cursor:none;background:none;border:none;padding:4px}
+.nav-hamburger span{display:block;width:22px;height:2px;background:#00FFB2;transition:all 0.3s}
+@media(max-width:768px){
+  .nav-links{display:none;position:fixed;top:60px;left:0;right:0;background:rgba(2,4,8,0.98);flex-direction:column;padding:20px 24px;gap:20px;border-bottom:1px solid rgba(0,255,178,0.12);z-index:199}
+  .nav-links.open{display:flex}
+  .nav-links a{font-size:12px}
+  .nav-hamburger{display:flex}
+  .nav-status{display:none}
+  .hero{flex-direction:column;padding:100px 24px 60px}
+  .hero-right{display:none}
+  .contact-grid{grid-template-columns:1fr}
+  .section{padding:60px 24px}
+  .timeline{padding:60px 24px}
+  .philosophy{padding:60px 24px}
+  .contact{padding:60px 24px}
+  nav{padding:16px 24px}
+}
+
 /* ARIA LAUNCHER */
 #aria-launcher{position:fixed;bottom:28px;right:28px;z-index:500;display:flex;flex-direction:column;align-items:flex-end;gap:10px}
 #aria-toggle{width:64px;height:64px;border-radius:50%;background:rgba(0,255,178,0.08);border:1.5px solid rgba(0,255,178,0.5);display:flex;align-items:center;justify-content:center;cursor:none;transition:all 0.3s;position:relative}
@@ -201,6 +230,7 @@ footer{position:relative;z-index:10;padding:32px 48px;border-top:1px solid rgba(
     <a href="#contact">Contact</a>
   </div>
   <div class="nav-status"><div class="status-dot"></div>Open to Opportunities</div>
+  <button class="nav-hamburger" id="nav-toggle" aria-label="Menu"><span></span><span></span><span></span></button>
 </nav>
 
 <!-- HERO -->
@@ -216,7 +246,7 @@ footer{position:relative;z-index:10;padding:32px 48px;border-top:1px solid rgba(
     <p class="hero-bio">Not defined by a job title. Not bound by a skill list. 16+ years of securing the world's most critical networks — and still rewriting what's possible in telecom security.</p>
     <div class="hero-ctas">
       <button class="btn-g" onclick="window.open('https://www.linkedin.com/in/harsh-vardhan-75865121/','_blank')">Let's Connect</button>
-      <button class="btn-o">Explore Work</button>
+      <button class="btn-o" onclick="document.getElementById('domains').scrollIntoView({behavior:'smooth'})">Explore Work</button>
     </div>
     <div class="hero-stats">
       <div class="hstat"><div class="hstat-num" id="ys">0</div><div class="hstat-label">Years</div></div>
@@ -316,22 +346,46 @@ footer{position:relative;z-index:10;padding:32px 48px;border-top:1px solid rgba(
   <div class="sec-title">16 years of <span>impact</span></div>
   <div class="tl-wrap">
     <div class="tl-item">
-      <div class="tl-year">Present</div>
-      <div class="tl-role">Telecom Security & Product Leader</div>
-      <div class="tl-company">Global Telecom Security Leader</div>
-      <div class="tl-desc">Leading security strategy, product management and threat intelligence for global telecom operator portfolios. Defining what telecom security looks like in the 5G era.</div>
+      <div class="tl-year">Feb 2026 – Present</div>
+      <div class="tl-role">Portfolio Manager</div>
+      <div class="tl-company">Nokia // Noida, India · Hybrid</div>
+      <div class="tl-desc">Leading product portfolio management for Nokia's 5G core security offerings. Driving strategy, roadmap and go-to-market for carrier-grade security products globally.</div>
     </div>
     <div class="tl-item">
-      <div class="tl-year">Mid Career</div>
-      <div class="tl-role">Senior Security Architect</div>
-      <div class="tl-company">Global Telecom Operator</div>
-      <div class="tl-desc">Architecting security for carrier-grade networks serving tens of millions of subscribers. Led major SS7 remediation programmes and built SOC capability from scratch.</div>
+      <div class="tl-year">Jan 2025 – Feb 2026</div>
+      <div class="tl-role">Domain Architect</div>
+      <div class="tl-company">Nokia // Noida, India · Hybrid</div>
+      <div class="tl-desc">Designing complex solutions for hybrid/public/private clouds for Nokia 5G core applications. Deep expertise in AWS EKS and OpenShift deployments at carrier scale.</div>
     </div>
     <div class="tl-item">
-      <div class="tl-year">Early Career</div>
-      <div class="tl-role">Network Security Engineer</div>
-      <div class="tl-company">Telecom Operator</div>
-      <div class="tl-desc">Started at the core — configuring, monitoring and defending telecom infrastructure. Where the deep protocol knowledge was built that everything else stands on.</div>
+      <div class="tl-year">Aug 2022 – Dec 2024</div>
+      <div class="tl-role">Solutions Architect</div>
+      <div class="tl-company">Nokia // Noida, India · Hybrid</div>
+      <div class="tl-desc">Solution Architect for 5G core — SPOC for Sky UK programme. Security & vulnerability testing for cloud-native applications. Complex project design and delivery on public and hybrid clouds.</div>
+    </div>
+    <div class="tl-item">
+      <div class="tl-year">Aug 2020 – Jul 2022</div>
+      <div class="tl-role">Distinguished Member of Technical Staff</div>
+      <div class="tl-company">Mavenir // Delhi, India · On-site</div>
+      <div class="tl-desc">Led implementation of VoLTE solution for the Indian Army. DevOps/delivery lead for cloud containerisation using Docker & Kubernetes. RedHat OpenStack deployments on HP and Dell computes. Led teams to deliver 4G IMS VMs in NFV environments.</div>
+    </div>
+    <div class="tl-item">
+      <div class="tl-year">Nov 2017 – Sep 2020</div>
+      <div class="tl-role">SME – System Integration</div>
+      <div class="tl-company">Nokia // India · Remote</div>
+      <div class="tl-desc">Delivered multiple global projects — DPI solution integration with Nokia CMG, Rakuten VoLTE, ICE Norway E2E VoLTE UAT. Onsite support in UK for 2 years. Bharti Airtel TPM for VoLTE.</div>
+    </div>
+    <div class="tl-item">
+      <div class="tl-year">Apr 2016 – Nov 2017</div>
+      <div class="tl-role">Technical Lead</div>
+      <div class="tl-company">Jio // Mumbai, India · On-site</div>
+      <div class="tl-desc">Technical Lead for IMS-VoLTE Service Excellence. Driving quality and performance of VoLTE services across one of the world's largest mobile networks.</div>
+    </div>
+    <div class="tl-item">
+      <div class="tl-year">Jul 2010 – Apr 2016</div>
+      <div class="tl-role">Senior Application Support Engineer</div>
+      <div class="tl-company">Ericsson // Gurugram, India · Remote</div>
+      <div class="tl-desc">Global support engineer for Ericsson Charging System, prepaid IN. Built deep SS7 expertise across all Diameter applications. Foundation of 16+ years of telecom protocol knowledge.</div>
     </div>
   </div>
 </div>
@@ -348,17 +402,20 @@ footer{position:relative;z-index:10;padding:32px 48px;border-top:1px solid rgba(
   <div class="sec-tag">Get In Touch</div>
   <div class="sec-title">Let's <span>build something</span></div>
   <div class="contact-grid">
-    <div class="contact-form">
-      <div class="cf-group"><label class="cf-label">Name</label><input class="cf-input" placeholder="Your name"></div>
-      <div class="cf-group"><label class="cf-label">Organization</label><input class="cf-input" placeholder="Company / Operator"></div>
-      <div class="cf-group"><label class="cf-label">What's on your mind?</label><textarea class="cf-textarea" placeholder="Tell me your challenge..."></textarea></div>
-      <button class="btn-g" style="width:fit-content">Send Message</button>
-    </div>
+    <form class="contact-form" action="https://formspree.io/f/vardhan.chauhan@gmail.com" method="POST" id="contact-form">
+      <input type="hidden" name="_subject" value="New message from portfolio site">
+      <input type="hidden" name="_next" value="https://saharsh-projects.vercel.app/#contact">
+      <div class="cf-group"><label class="cf-label">Name</label><input class="cf-input" name="name" placeholder="Your name" required></div>
+      <div class="cf-group"><label class="cf-label">Organization</label><input class="cf-input" name="organization" placeholder="Company / Operator"></div>
+      <div class="cf-group"><label class="cf-label">What's on your mind?</label><textarea class="cf-textarea" name="message" placeholder="Tell me your challenge..." required></textarea></div>
+      <button type="submit" class="btn-g" style="width:fit-content">Send Message</button>
+      <div id="form-status" style="font-size:11px;letter-spacing:1px;margin-top:8px;display:none"></div>
+    </form>
     <div class="contact-info">
       <div class="ci-item"><div class="ci-icon">in</div><div><div class="ci-label">LinkedIn</div><div class="ci-val"><a href="https://www.linkedin.com/in/harsh-vardhan-75865121/" target="_blank">linkedin.com/in/harsh-vardhan-75865121</a></div></div></div>
       <div class="ci-item"><div class="ci-icon">M</div><div><div class="ci-label">Medium</div><div class="ci-val"><a href="https://medium.com/@vardhan.chauhan" target="_blank">medium.com/@vardhan.chauhan</a></div></div></div>
       <div class="ci-item"><div class="ci-icon">gh</div><div><div class="ci-label">GitHub</div><div class="ci-val"><a href="https://github.com/ehansih" target="_blank">github.com/ehansih</a></div></div></div>
-      <div class="ci-item"><div class="ci-icon">@</div><div><div class="ci-label">Email</div><div class="ci-val">Available on LinkedIn</div></div></div>
+      <div class="ci-item"><div class="ci-icon">@</div><div><div class="ci-label">Email</div><div class="ci-val"><a href="mailto:vardhan.chauhan@gmail.com">vardhan.chauhan@gmail.com</a></div></div></div>
       <div class="ci-item"><div class="ci-icon">◉</div><div><div class="ci-label">Available For</div><div class="ci-val">Advisory // Consulting // Speaking // Collaboration</div></div></div>
       <div class="ci-item"><div class="ci-icon">TZ</div><div><div class="ci-label">Timezone</div><div class="ci-val">IST (UTC+5:30) // India // Global</div></div></div>
     </div>
@@ -591,8 +648,34 @@ fetch('https://api.counterapi.dev/v1/ehansih-portfolio/visits/up')
 function ablink(){[document.getElementById('ael'),document.getElementById('aer')].forEach(e=>{if(e){e.setAttribute('ry','0.5');setTimeout(()=>e.setAttribute('ry','5.5'),110)}});setTimeout(ablink,2800+Math.random()*4000)}
 setTimeout(ablink,3500);
 
-// Auto open after 4s
-setTimeout(()=>{if(!panelOpen){panelOpen=true;document.getElementById('aria-panel').classList.add('open');setTimeout(()=>speak(KB.greet[0],'greeting'),400)}},4000);
+// Auto open disabled
+
+// HAMBURGER NAV
+const navToggle=document.getElementById('nav-toggle');
+const navLinks=document.querySelector('.nav-links');
+if(navToggle){navToggle.addEventListener('click',()=>{navLinks.classList.toggle('open')})}
+document.querySelectorAll('.nav-links a').forEach(a=>a.addEventListener('click',()=>navLinks.classList.remove('open')));
+
+// CONTACT FORM — AJAX submit
+const cf=document.getElementById('contact-form');
+const fs=document.getElementById('form-status');
+if(cf){cf.addEventListener('submit',async e=>{
+  e.preventDefault();
+  const btn=cf.querySelector('button[type=submit]');
+  btn.textContent='Sending...';btn.disabled=true;
+  try{
+    const res=await fetch(cf.action,{method:'POST',body:new FormData(cf),headers:{Accept:'application/json'}});
+    if(res.ok){
+      fs.style.display='block';fs.style.color='#00FFB2';fs.textContent='// Message sent. I\'ll be in touch.';
+      cf.reset();
+    } else {
+      fs.style.display='block';fs.style.color='#ff6b6b';fs.textContent='// Something went wrong. Try emailing directly.';
+    }
+  } catch(err){
+    fs.style.display='block';fs.style.color='#ff6b6b';fs.textContent='// Network error. Try emailing directly.';
+  }
+  btn.textContent='Send Message';btn.disabled=false;
+})}
 </script>
 </body>
 </html>
