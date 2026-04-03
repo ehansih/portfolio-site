@@ -1,3 +1,15 @@
+<div align="center">
+
+# 🏠 Portfolio Site
+
+Personal portfolio — Harsh Vardhan Singh Chauhan. Cybersecurity & AI engineer.
+
+![HTML](https://img.shields.io/badge/HTML5-orange?logo=html5) ![Vercel](https://img.shields.io/badge/Vercel-deployed-black?logo=vercel) ![Last Commit](https://img.shields.io/github/last-commit/ehansih/portfolio-site)
+
+</div>
+
+---
+
 # Portfolio Site
 
 Personal portfolio of **Harsh Vardhan Singh Chauhan** — Telecom Security specialist, 5G Architect, and Product Strategist with 16+ years of experience.
